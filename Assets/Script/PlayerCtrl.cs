@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.U2D.Path.GUIFramework;
 using UnityEngine;
 
 public class PlayerCtrl : MonoBehaviour
@@ -20,7 +19,7 @@ public class PlayerCtrl : MonoBehaviour
     [SerializeField] bool leftFlag;
     [SerializeField] bool groundFlag;
     [SerializeField] bool jumpFlag;
-    [SerializeField] bool playerDead;
+    [SerializeField] bool playerDead; 
 
     Animator animator;
     Rigidbody2D rigi2D;

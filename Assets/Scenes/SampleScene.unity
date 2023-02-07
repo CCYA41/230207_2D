@@ -1988,7 +1988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 135231749}
-  Monster: {fileID: 0}
+  Monster: {fileID: 1965745890}
   UIKeys:
   - {fileID: 1948834930}
   - {fileID: 1355658130}
@@ -2258,6 +2258,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207c5473c35e59840827335e76191174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1965745890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2976553096061774460, guid: 86ee5c2eaa699ec40a212d15fe255eac, type: 3}
+  m_PrefabInstance: {fileID: 1940638783}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2000193448
 GameObject:
   m_ObjectHideFlags: 0

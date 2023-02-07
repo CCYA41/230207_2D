@@ -5,7 +5,7 @@ using UnityEngine;
 public class Exit : MonoBehaviour
 {
     [Header("Status")]
-    bool gameClear;
+    bool gameClear; 
     private void Awake()
     {
         gameClear= false;

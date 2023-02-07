@@ -14,6 +14,7 @@ public class GameMnager : MonoBehaviour
     }
 
     public static int keyCount;
+    public float monsterTimer;
 
 
 
@@ -33,7 +34,7 @@ public class GameMnager : MonoBehaviour
     int awakeWhileCounter;
     int updateWhileCounter;
 
-    [SerializeField] bool monsterDead;
+    
 
     public static GAMESTATE gamestate;
 
@@ -43,11 +44,13 @@ public class GameMnager : MonoBehaviour
     PlayerCtrl playertCtrl;
     MonsterCtrl monsterCtrl;
 
-
+     
     private void Awake()
     {
+        
         playertCtrl = FindObjectOfType<PlayerCtrl>();
         monsterCtrl = FindObjectOfType<MonsterCtrl>();
+
         Initialize();
         //for (int i = 0; i < UIKeys.Length; i++)
         //{
@@ -142,6 +145,15 @@ public class GameMnager : MonoBehaviour
                 updateWhileCounter++;
             }
             updateWhileCounter = 0;
+        }
+        if (monsterCtrl.monsterDie)
+        {
+            monsterTimer += Time.deltaTime;
+            if (monsterTimer > 3)
+            {
+                monsterCtrl.Initialize();
+                monsterTimer = 0;
+            }
         }
     }
     private void StateControl()

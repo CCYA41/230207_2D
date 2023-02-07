@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3234372075099987126}
   - component: {fileID: 5795032060532923535}
   - component: {fileID: 2065715054182889834}
-  - component: {fileID: -6697269821588618126}
   - component: {fileID: 1634903579}
   - component: {fileID: 1634903578}
+  - component: {fileID: -4531358920436973328}
   m_Layer: 7
   m_Name: Smile
   m_TagString: Monster
@@ -108,23 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &-6697269821588618126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2976553096061774460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ffd5e43bbd2f9b4e8e80944c17ec8be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vx: 0
-  runSpeed: 0
-  groundFlag: 0
-  leftFlag: 0
-  monsterDie: 0
 --- !u!50 &1634903579
 Rigidbody2D:
   serializedVersion: 4
@@ -162,3 +145,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!114 &-4531358920436973328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2976553096061774460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ffd5e43bbd2f9b4e8e80944c17ec8be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vx: 0
+  runSpeed: 0
+  groundFlag: 0
+  leftFlag: 0
+  monsterDie: 0
+  destroyTimer: 0
+  curState: 

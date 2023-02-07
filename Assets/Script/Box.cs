@@ -7,9 +7,17 @@ public class Box : MonoBehaviour
     Rigidbody2D rigi2D;
 
     private void Awake()
+
     {
+        rigi2D = GetComponent<Rigidbody2D>();
         rigi2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+
         rigi2D.gravityScale = 0f;
+
+    }
+    private void Start()
+    {
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

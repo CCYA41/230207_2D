@@ -11,7 +11,7 @@ public class MonsterCtrl : MonoBehaviour
 
     [SerializeField] bool groundFlag;
     [SerializeField] bool leftFlag;
-    [SerializeField] bool monsterDie;
+    [SerializeField] public bool monsterDie;
 
     public float destroyTimer;
     public string curState;
@@ -35,7 +35,7 @@ public class MonsterCtrl : MonoBehaviour
         vx = 0;
         runSpeed = 4;
         destroyTimer = 0;
-
+          
         curState = "Idle";
 
         groundFlag = false;
@@ -47,6 +47,7 @@ public class MonsterCtrl : MonoBehaviour
         this.transform.position = startPos;
 
         rigi2D.constraints = RigidbodyConstraints2D.None;
+
         rigi2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         capCol2D.enabled = true;
