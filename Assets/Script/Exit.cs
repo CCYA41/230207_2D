@@ -6,7 +6,7 @@ public class Exit : MonoBehaviour
 {
     [Header("Status")]
     bool gameClear; 
-    private void Awake()
+    private void Start()
     {
         gameClear= false;
     }

@@ -22,7 +22,7 @@ public class MonsterCtrl : MonoBehaviour
     CapsuleCollider2D capCol2D;
 
     Vector3 startPos;
-    private void Awake()
+    private void Start()
     {
         animator = GetComponent<Animator>();
         rigi2D = GetComponent<Rigidbody2D>();

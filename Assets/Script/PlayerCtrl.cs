@@ -27,7 +27,7 @@ public class PlayerCtrl : MonoBehaviour
     CapsuleCollider2D capColl2D;
 
     Vector3 startPos;
-    private void Awake()
+    private void Start()
     {
 
         animator = GetComponent<Animator>();

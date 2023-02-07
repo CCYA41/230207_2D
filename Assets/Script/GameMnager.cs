@@ -45,9 +45,9 @@ public class GameMnager : MonoBehaviour
     MonsterCtrl monsterCtrl;
 
      
-    private void Awake()
+    private void Start()
     {
-        
+
         playertCtrl = FindObjectOfType<PlayerCtrl>();
         monsterCtrl = FindObjectOfType<MonsterCtrl>();
 
@@ -91,6 +91,7 @@ public class GameMnager : MonoBehaviour
             awakeWhileCounter++;
 
         }
+        Time.timeScale = 0;
     }
 
 
@@ -162,7 +163,7 @@ public class GameMnager : MonoBehaviour
         {
             case GAMESTATE.START:
                 Initialize();
-                Time.timeScale = 0;
+                
                 GameStartTitle.SetActive(true);
                 GameRestartTitle.SetActive(false);
                 GameClearTitle.SetActive(false);

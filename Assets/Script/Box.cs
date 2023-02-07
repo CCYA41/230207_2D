@@ -6,17 +6,13 @@ public class Box : MonoBehaviour
 {
     Rigidbody2D rigi2D;
 
-    private void Awake()
+    private void Start()
 
     {
         rigi2D = GetComponent<Rigidbody2D>();
         rigi2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         rigi2D.gravityScale = 0f;
-
-    }
-    private void Start()
-    {
 
     }
 
